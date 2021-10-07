@@ -36,8 +36,7 @@
         android:id="@+id/til2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
+
         android:layout_marginBottom="350dp"
 
         android:textColorHint="#0B0A0A"
@@ -53,6 +52,8 @@
             android:layout_height="wrap_content"
             android:background="#67F5FA"
             android:hint="Password: "
+            android:inputType="textPassword"
+            android:ems="10"
             android:textColorHint="#F44336"
             android:textColorLink="@color/teal_200"></EditText>
 
