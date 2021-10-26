@@ -41,7 +41,6 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:alpha="0.5"
             android:hint="Username"
             android:maxLines="1"
             tools:ignore="SpeakableTextPresentCheck" />
