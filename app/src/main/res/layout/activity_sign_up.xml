@@ -17,7 +17,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/pass"
+        app:layout_constraintBottom_toTopOf="@+id/pass1"
         app:layout_constraintEnd_toStartOf="@+id/guideline9"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
@@ -25,10 +25,9 @@
         app:startIconDrawable="@drawable/username_foreground">
 
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/username1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:hint="Username"
             android:maxLines="1"
             tools:ignore="SpeakableTextPresentCheck" />
@@ -37,7 +36,7 @@
 
     <!--PASSWORD-->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/pass"
+        android:id="@+id/pass1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -49,39 +48,37 @@
         app:startIconDrawable="@drawable/password_foreground">
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/password1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
             android:inputType="textPassword"
             android:maxLines="1"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck"/>
 
 
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/pass"
+        android:id="@+id/number1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline9"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
-        app:layout_constraintTop_toBottomOf="@+id/user"
-        app:passwordToggleEnabled="true"
+        app:layout_constraintTop_toBottomOf="@+id/pass1"
         app:boxBackgroundColor="@color/white"
-        app:startIconDrawable="@drawable/password_foreground">
+        app:startIconDrawable="@drawable/phone_foreground">
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/number2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword"
+            android:hint="Phone"
+            android:inputType="number"
             android:maxLines="1"
             tools:ignore="SpeakableTextPresentCheck" />
-
-
     </com.google.android.material.textfield.TextInputLayout>
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/mail"
@@ -90,20 +87,33 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline9"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
-        app:layout_constraintTop_toBottomOf="@+id/pass"
-        app:passwordToggleEnabled="true"
+        app:layout_constraintTop_toBottomOf="@+id/number1"
         app:boxBackgroundColor="@color/white"
-        app:startIconDrawable="@drawable/password_foreground">
+        app:startIconDrawable="@drawable/mail_foreground">
 
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-             />
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            tools:ignore="SpeakableTextPresentCheck" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/login1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="Login"
+        android:textColor="@android:color/black"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toBottomOf="@+id/mail" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -132,8 +142,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.9" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

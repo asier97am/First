@@ -7,14 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import android.view.animation.AnimationUtils;
+import android.view.animation.Animation;
+
 public class SplashScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+        // openApp(true);
+        //implementar animacion
+        ImageView mBolt = findViewById(R.id.bolt);
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.fadein);
+        mBolt.startAnimation(myanim);
 
-        ImageView mBolt=findViewById(R.id.bolt);
 
 
 
